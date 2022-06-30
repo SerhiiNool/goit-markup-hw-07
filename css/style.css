@@ -58,12 +58,14 @@ img {
   align-items: center;
 }
 
-.header-contact {
+.nav-contacts {
   display: flex;
   margin: 0 0 0 auto;
   align-items: center;
   padding-left: 0px;
+  list-style: none;
 }
+
 .icon-tel,
 .icon-mail {
   fill: var(--grey-color);
@@ -71,7 +73,7 @@ img {
   display: block;
 }
 
-.header-logo-text {
+.nav-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -81,19 +83,21 @@ img {
   padding-bottom: 24px;
   margin-right: 93px;
   display: block;
+  text-decoration: none;
 }
 
-.studio-style {
+.first-name {
   color: var(--black-text);
 }
-.header-list {
+.nav-link {
   display: flex;
   align-items: baseline;
   padding-left: 0px;
   margin: 0px;
+  list-style: none;
 }
 
-.header-link-curent {
+.title-curent {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -102,8 +106,9 @@ img {
   display: block;
   position: relative;
   color: var(--blue-color);
+  text-decoration: none;
 }
-.header-link-curent::after {
+.title-curent::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -114,10 +119,10 @@ img {
   border-radius: 2px;
 }
 
-.header-item:not(:last-child) {
+.item:not(:last-child) {
   margin-right: 50px;
 }
-.header-link {
+.title {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -128,20 +133,22 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 .header-li {
   margin-right: 50px;
 }
 
-.header-link:hover,
-.header-link:focus {
+.title:hover,
+.title:focus {
   color: var(--blue-color);
 }
+
 .header-conect {
   margin-left: auto;
 }
 
-.header-mail {
+.item-mail {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -156,9 +163,10 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
-.header-tel {
+.item-tel {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -173,14 +181,15 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
-.header-tel:hover,
-.header-tel:focus {
+.item-tel:hover,
+.item-tel:focus {
   color: var(--blue-color);
 }
-.header-mail:hover,
-.header-mail:focus {
+.item-mail:hover,
+.item-mail:focus {
   color: var(--blue-color);
 }
 .icon-mail {
@@ -193,25 +202,23 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-mail:hover .icon-mail {
+.item-mail:hover .icon-mail {
   fill: var(--blue-color);
 }
-.icon-mail:hover .header-mail {
+
+.item-mail:focus .icon-mail {
   fill: var(--blue-color);
 }
-.header-mail:focus .icon-mail {
+.item-tel:hover .icon-tel {
   fill: var(--blue-color);
 }
-.header-tel:hover .icon-tel {
-  fill: var(--blue-color);
-}
-.header-tel:focus .icon-tel {
+.item-tel:focus .icon-tel {
   fill: var(--blue-color);
 }
 
 /*----------MAIN---------*/
 
-.main-text-section {
+.hero {
   background: var(--black-back);
   text-align: center;
   padding: 200px 0px;
@@ -223,7 +230,7 @@ img {
   margin: 0 auto;
 }
 
-.main-text {
+.hero-title {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -236,7 +243,7 @@ img {
   margin-right: auto;
 }
 
-.mail-btn {
+.link-btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -252,8 +259,8 @@ img {
   margin-top: 30px;
   transition: box-shadow 250ms 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.mail-btn:hover,
-.mail-btn:focus {
+.link-btn:hover,
+.link-btn:focus {
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.15);
 }
