@@ -266,7 +266,7 @@ img {
 }
 /* -----ABOUT-----*/
 
-.about-icon {
+.advantages-background {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -275,10 +275,10 @@ img {
   align-items: center;
   margin-bottom: 30px;
 }
-.about-svg-icon {
+.advantages-sprite {
   fill: #afb1b8;
 }
-.about-title {
+.advantages-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -287,17 +287,18 @@ img {
   color: var(--black-text);
   margin: 0 0 10px 0;
 }
-.about-list {
+.advantages {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+  list-style: none;
 }
 
-.about-title-one {
+.advantages-element {
   max-width: 270px;
 }
-.about-title-one:not(:last-child) {
+.advantages-element:not(:last-child) {
   margin-right: 30px;
 }
 .about {
@@ -305,7 +306,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.about-bottom-text {
+.advantages-description {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -319,8 +320,9 @@ img {
   display: flex;
   padding: 0px 0px;
   margin: 0px;
+  list-style: none;
 }
-.work-section {
+.team {
   padding-bottom: 94px;
 }
 .side-text {
@@ -376,6 +378,7 @@ img {
   display: flex;
   padding: 0px;
   margin: 0px;
+  list-style: none;
 }
 .masters {
   background: #ffffff;
