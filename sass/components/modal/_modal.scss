@@ -26,7 +26,6 @@
   top: 8px;
   right: 8px;
   border-radius: 50%;
-
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
@@ -34,12 +33,11 @@
   align-content: center;
   padding: 5px;
   cursor: pointer;
-}
-
-.modal-close-btn:hover,
-.modal-close-btn :focus {
-  background-color: var(--blue-backgraund);
-  fill: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--blue-backgraund);
+    fill: var(--white-color);
+  }
 }
 
 .is-hidden {
@@ -67,21 +65,17 @@
   border-radius: 4px;
   padding-left: 35px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus + .input-icon {
+    fill: var(--blue-color);
+  }
+  &:focus {
+    border: 1px solid var(--blue-color);
+    border-radius: 4px;
+    border-color: var(--blue-color);
+    outline: #2196f3;
+  }
 }
-.modal-input:focus + .input-icon {
-  fill: var(--blue-color);
-}
-.modal-input:focus {
-  border: 1px solid var(--blue-color);
-  border-radius: 4px;
-  border-color: var(--blue-color);
-  outline: #2196f3;
-}
-.modal-text:focus {
-  border: 1px solid var(--blue-color);
-  border-radius: 4px;
-  outline: #2196f3;
-}
+
 .modal-label {
   font-weight: 400;
   font-size: 12px;
@@ -108,10 +102,14 @@
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   padding: 10px;
   resize: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border: 1px solid var(--blue-color);
+    border-radius: 4px;
+    outline: #2196f3;
+  }
 }
 .input-btn-send {
   font-family: 'Roboto';
@@ -132,12 +130,13 @@
   margin-top: 30px;
   display: block;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
-.input-btn-send:hover,
-.input-btn-send:focus {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
 .check-text {
   font-size: 14px;
   color: #757575;
@@ -145,18 +144,18 @@
   align-items: center;
   letter-spacing: 0.03em;
   justify-content: center;
+  & span {
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--black-text);
+    border-radius: 2px;
+    margin-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.check-text span {
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--black-text);
-  border-radius: 2px;
-  margin-right: 9px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .check-icon {
   fill: transparent;
 }
